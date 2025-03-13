@@ -7,6 +7,7 @@ from azure.ai.ml import command
 from azure.ai.ml.constants import AssetTypes
 from azure.ai.ml import Input
 
+# creating workspace connection
 ml_client = MLClient.from_config(credential=DefaultAzureCredential())
 
 env = ml_client.environments.get(name = "custom_env", version = 1).id
