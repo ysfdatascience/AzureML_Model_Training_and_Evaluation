@@ -13,6 +13,7 @@ ml_client = MLClient.from_config(credential=DefaultAzureCredential())
 env = ml_client.environments.get(name = "custom_env", version = 1).id
 data_path = ml_client.data.get(name = "loan_Data", version = 1).path
 
+#creating command job
 job = command(
     name = "loan_model_training_1",
     experiment_name= "loan_model_training",
