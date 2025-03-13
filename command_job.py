@@ -33,4 +33,5 @@ job = command(
     compute = "yy-compute-instance"
 )
 
+# runnnig the job in the compute cluster
 ml_client.jobs.create_or_update(job)
